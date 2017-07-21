@@ -11,8 +11,7 @@ from data_prob import calc_prob
 plt.style.use('ggplot')
 
 path = "data_updated.xlsx"
-sheets=["Prensas", 'Hornos']
-
+sheets=[ "Hornos","Prensas"]
 # 'Prensas', 'Hornos'
 def clean_data(sheetname):
     
@@ -71,8 +70,26 @@ def clean_data(sheetname):
     
     # For now calculate the average dates 
     data['average date'] = (data['date_end_clean'] + data['date_str_clean']) * 0.5
-        
+    
+
+    split_by = lambda x: pd.Series([i for i in reversed(x.split('('))])
+    if extras:
+        place = data['site'].apply(split_by)
+        place.columns = ['province','site_name']
+        place['province']=place.province.str.replace(')','')
+        data = pd.concat([data, place], axis = 1)    
+
+    else:
+        place = data['site'].str.split(r'[,(]+', expand = True)
+        place.columns = ['site_name', 'district', 'province']
+        place['province'] = place['province'].str.replace(')','')
+        data = pd.concat([data, place], axis = 1)  
+
+    
     data.to_csv( sheetname + ' clean_data.csv')
+    return data
+
+def data_manipulation(data):
     
     # pivot the data for the figure
     data_time = data.groupby('average date')['Estimated number'].mean()
@@ -81,25 +98,40 @@ def clean_data(sheetname):
     s = calc_prob(data)
     return s, data_time
 
-counter = 0
-lw = 2
-for i in sheets:
-    
-    s, data_time = clean_data(i)
+def visual_provinces(data,sheet):
+    probs = data.groupby(by=data['province']).apply(calc_prob).unstack()
+    probs.T.fillna(0).plot(subplots = True, figsize = (10, 25))
+    plt.savefig('results' +str(sheet)+'.pdf')
+
+def visual_total( s, data_time, counter, lw):
     if counter:
 
 #        data_time.plot(color = '#9ecae1', linewidth=lw, label = sheets[counter] + ' average date')
-        s.plot(color ='#3182bd', linewidth=lw, label = sheets[counter] )
-        
+        s.plot(color ='#3182bd', linewidth=lw, label = sheets[counter] , figsize = (20, 10))     
+        plt.legend()
+        plt.savefig('results_whole.pdf')
     else:
 #        data_time.plot(color = '#fdd0a2',linewidth=lw, figsize = (20,10), label = sheets[counter]+ ' average date')
         s.plot(color = '#e6550d',linewidth=lw, label = sheets[counter])
         
-    plt.legend()    
-    counter += 1
+     
+
+counter = 0
+lw = 2
+
     
-#plt.title(sheetname)
-plt.savefig('results.pdf')
+for i in sheets:
+    data = clean_data(i)
+    
+    s, data_time  = data_manipulation(data)
+    
+    
+    visual_provinces(data, i)
+#    visual_total(s, data_time, counter, lw)
+    counter += 1
+
+
+
 
 
 

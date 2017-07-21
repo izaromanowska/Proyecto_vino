@@ -13,7 +13,6 @@ import pandas as pd
 
 
 def calc_prob(data):
- 
 #    get the oldest date, and the youngest date to calculate the range for the dictionary
     minimum = data['date_str_clean'].min().astype(int)
     maximum = data['date_end_clean'].max().astype(int)
@@ -42,3 +41,4 @@ def calc_prob(data):
     s.reset_index()
 
     return s
+
