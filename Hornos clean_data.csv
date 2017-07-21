@@ -1,0 +1,47 @@
+,site,no_hornos,Estimated number,date_str,date_end,fi_dudoso,ft_dudoso,date_str_clean,date_end_clean,average date
+0,Can Viader (Malgrat de Mar),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+1,El Mujal (Calella),,1,-25 aC,70 dC,0,0,-25.0,70.0,22.5
+2,El Moré (Sant Pol de Mar,3,3,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+3,Torre Martina (S. Pol de Mar),,1,-25 aC,100 dC,0,0,-25.0,100.0,37.5
+4,El Sot del Camp (S. Vicenç),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+5,Horta Nova (Arenys de Mar),1,1,-25 aC,25 dC?,0,1,-25.0,25.0,0.0
+6,El Morrell (S. Andreu de Llavaneres),1,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+7,Les Casetes (Mataró),1,1,-40 aC,100 dC,0,0,-40.0,100.0,30.0
+8,Santa Cecilia (Mataró),,1,-80/50 aC,50 dC,0,0,-65.0,50.0,-7.5
+9,Torre Llauder (Mataró),3,3,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+10,Can Portell (Argentona),,1,-40 aC,50 dC,0,0,-40.0,50.0,5.0
+11,Sant Sebastià (Argentona),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+12,Veinat del Sant Crist (Cabrils),1,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+13,Club Tennis Barcelona (Teià),1,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+14,Riera de Teià (Masnou),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+15,Cal Ros de les Cabres (Masnou),2,2,-40 aC,50 dC,0,0,-40.0,50.0,5.0
+16,Autopista (Alella),3?,1,-25 aC,100 dC,0,0,-25.0,100.0,37.5
+17,Can Valls (Badalona),1,1,-25 aC,100 dC,0,0,-25.0,100.0,37.5
+18,Can Riviere (Badalona),,1,-25 aC,200 dC?,0,1,-25.0,200.0,87.5
+19,Can Fradera (Badalona),6,6,-40 aC,80 dC,0,0,-40.0,80.0,20.0
+20,Can Peixau (Badalona),,1,-40 aC,50 dC,0,0,-40.0,50.0,5.0
+21,Avenida Francesc Cambó (Barcelona),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+22,Carrer Princesa (Barcelona),1,1,-25 aC,50 dC segunda fase 50-200? C,0,1,-25.0,50.0,12.5
+23,Estadio de Montjuïc (Barcelona),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+24,Carrer Mare de Deu del Port (Barcelona),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+25,Sant Pau del Camp (Barcelona),,1,-25 aC,100 dC,0,0,-25.0,100.0,37.5
+26,La Foneria (Barcelona),,1,250? dC,300? dC,1,1,250.0,300.0,275.0
+27,Ca l'Arnau (Cabrera de Mar),1,1,-80 aC,50 dC,0,0,-80.0,50.0,-15.0
+28,Vila Vella (Sant Boi de Llobregat),2,2,-25 aC,90 dC,0,0,-25.0,90.0,32.5
+29,Can Reverter (Sant Vicenç dels Horts),1,1,-10 aC,120 dC,0,0,-10.0,120.0,55.0
+30,Can Pedrerol (Castellbisbal),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+31,Can Tintorer (El Papiol),1,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+32,Can Jofresa (Terrassa),3,3,-25 aC,90 dC,0,0,-25.0,90.0,32.5
+33,La Salut (Sabadell),4,4,-40 aC,50 dC,0,0,-40.0,50.0,5.0
+34,Can Feu (Sant Quirze del Vallès),4,4,-25 aC,70 dC,0,0,-25.0,70.0,22.5
+35,Santa Maria de les Feixes (Cerdanyola del Vallès),,1,50 dC?,100-150 dC?,1,1,50.0,125.0,87.5
+36,Camp d'en Ventura de l'Oller (Santa Perpetua de Mogoda),2,2,-25 aC,80 dC,0,0,-25.0,80.0,27.5
+37,Carrer Balmes (Caldes de Montbui),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+38,Mas Manolo (Caldes de Montbui),3,3,-25 aC,80 dC,0,0,-25.0,80.0,27.5
+39,Can Carerac (Caldes de Montbui),,1,-10 aC?,50 dC?,1,1,-10.0,50.0,20.0
+40,Sant Miquel dels Martres (Caldes de Montbui),,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+41,Can Vendrell (Santa Eulàlia de Ronçana),1,1,-40 aC,50 dC,0,0,-40.0,50.0,5.0
+42,Can Cabot (Santa Eulàlia de Ronçana),2,2,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+43,Can Collet (Llinars del Vallès),1,1,-25 aC,50 dC,0,0,-25.0,50.0,12.5
+44,Carrer Sant Josep Oriol (Gavà),,1,-25 aC?,20 dC?,1,1,-25.0,20.0,-2.5
+45,TOTAL,46,68,nan,nan,0,0,,,

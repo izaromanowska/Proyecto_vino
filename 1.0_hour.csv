@@ -1,0 +1,2 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2017-07-19T09:49:21.810Z,37.4970016,-118.8893356,2.11,2.63,md,30,178,0.1045,0.04,nc,nc72842221,2017-07-19T09:51:05.229Z,"Central California",earthquake,0.34,1.13,0.15,28,automatic,nc,nc
